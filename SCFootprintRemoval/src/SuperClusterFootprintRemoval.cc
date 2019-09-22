@@ -151,15 +151,17 @@ sc_xtal_information SuperClusterFootprintRemoval::GetSCXtalInfo( reco::SuperClus
         if( cristalli.at( i ).subdetId() != EcalBarrel && cristalli.at( i ).subdetId() != EcalEndcap ) { continue; }
         bool isbarrel = ( cristalli.at( i ).subdetId() == EcalBarrel );
 
-        CaloCellGeometry *cellGeometry = NULL;
+        //CaloCellGeometry *cellGeometry = NULL;
+        std::shared_ptr<const CaloCellGeometry> cellGeometry;
         EBDetId ebDetId;
         EEDetId eeDetId;
         if( isbarrel ) {
             ebDetId = cristalli.at( i );
-            cellGeometry = ( CaloCellGeometry * )( barrelGeometry->getGeometry( ebDetId ) );
-        } else {
+//            cellGeometry = ( CaloCellGeometry * )( barrelGeometry->getGeometry( ebDetId ) );
+            cellGeometry = ( barrelGeometry->getGeometry( ebDetId ) );
+           } else {
             eeDetId = cristalli.at( i );
-            cellGeometry = ( CaloCellGeometry * )( endcapGeometry->getGeometry( eeDetId ) );
+            cellGeometry = ( endcapGeometry->getGeometry( eeDetId ) );
         }
         TVector3 xtal_position( cellGeometry->getPosition().x(), cellGeometry->getPosition().y(), cellGeometry->getPosition().z() );
 

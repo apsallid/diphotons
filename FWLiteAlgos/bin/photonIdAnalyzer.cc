@@ -1,6 +1,7 @@
 #include "FWCore/FWLite/interface/AutoLibraryLoader.h"
 #include "PhysicsTools/UtilAlgos/interface/FWLiteAnalyzerWrapper.h"
-
+#include "FWCore/PythonParameterSet/interface/PythonProcessDesc.h"
+#include "FWCore/ParameterSet/interface/ProcessDesc.h"
 #include "../interface/PhotonIdAnalyzer.h"
 
 using namespace diphotons;
@@ -25,6 +26,7 @@ int main( int argc, char *argv[] )
 
     // get the python configuration
     PythonProcessDesc builder( argv[1], argc, argv );
+    //PythonProcessDesc builder( argv[1]);
     WrappedFWLiteAnalyzer ana( *( builder.processDesc()->getProcessPSet() ), std::string( "photonIdAnalyzer" ) );
     ana.beginJob();
     ana.analyze();
