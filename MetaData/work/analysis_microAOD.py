@@ -18,7 +18,12 @@ import os
 ### 2016
 process.GlobalTag = GlobalTag(process.GlobalTag, '', '')
 process.source = cms.Source("PoolSource",
-                             fileNames=cms.untracked.vstring("/store/mc/RunIISummer16MiniAODv3/VBFHToGG_M125_13TeV_amcatnlo_pythia8_v2/MINIAODSIM/PUMoriond17_94X_mcRun2_asymptotic_v3-v1/50000/38128C3C-892D-E911-AC8E-008CFA0087C4.root"))
+                             #fileNames=cms.untracked.vstring("/store/mc/RunIISummer16MiniAODv3/VBFHToGG_M125_13TeV_amcatnlo_pythia8_v2/MINIAODSIM/PUMoriond17_94X_mcRun2_asymptotic_v3-v1/50000/38128C3C-892D-E911-AC8E-008CFA0087C4.root"))
+                            #fileNames=cms.untracked.vstring("/store/mc/RunIIFall17MiniAODv2/RSGravitonToGammaGamma_kMpl001_M_750_TuneCP2_13TeV_pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/90000/12A586D7-5CFD-E811-9EB5-002A6AE0E683.root"))
+                            fileNames=cms.untracked.vstring("/store/data/Run2017B/DoubleEG/MINIAOD/31Mar2018-v1/00000/90CBEFEC-6E37-E811-9E9F-A4BF0112BC14.root"))
+               
+                            #fileNames=cms.untracked.vstring("root://cms-xrd-global.cern.ch//store/mc/RunIIFall17MiniAODv2/GGJets_M-1000To2000_Pt-50_13TeV-sherpa/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/40000/EA6BBEF2-7944-E811-B767-0CC47A4D76CC.root"))
+                              
 #    process.GlobalTag = GlobalTag(process.GlobalTag,'80X_dataRun2_2016LegacyRepro_v4','')
 #    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/data/Run2016B/SingleElectron/MINIAOD/07Aug17_ver1-v1/110000/0248293E-578B-E711-A639-44A842CFC9D9.root"))
 
