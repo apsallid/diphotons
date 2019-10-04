@@ -1,0 +1,8 @@
+{
+    "processes" : {
+	"TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8" : ["/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8" ],
+	"WGJets_MonoPhoton_PtG-40to130_TuneCP5_13TeV-madgraph" : ["/WGJets_MonoPhoton_PtG-40to130_TuneCP5_13TeV-madgraph"]
+    },
+
+    "cmdLine" : "campaign=RunIIFall17MiniAODv2",
+}

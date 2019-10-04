@@ -1,11 +1,11 @@
 {
 
     "processes" : {
-	    "DYJetsToLL_M-50_TuneCUETP8M1-amcatnloFXFX-pythia8" : [
-	    				["/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8",{"njobs":100}]
+	    "DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8" : [
+	    				["/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8",{"njobs":100}]
 		]
 
 	    },
 
-    "cmdLine" : "campaign=EXOSpring15_7415_v2_38T  selection=electron massCut=60 ptLead=30 ptSublead=25"
+    "cmdLine" : "campaign=RunIIFall17MiniAODv2  selection=electron massCut=60 ptLead=30 ptSublead=25"
 }
